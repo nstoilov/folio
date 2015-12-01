@@ -1,0 +1,103 @@
+/*Navigation bar*/
+.navbar {
+  margin-bottom: -40px;
+  text-st
+}
+
+
+.navbar-nav {
+  float:right;
+}
+
+
+ul.nav a {
+   background: #E8E8E8  ;
+}
+
+ul.nav a:hover {
+   background: white;
+}
+
+.navbar-brand:hover{
+     background: white;
+}
+
+.navbar-brand{
+     background: #F0F0F0;
+     margin-left: 0px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -0px;
+}
+
+ {
+  margin-top: 0px;
+}
+
+
+
+/*Sections*/
+
+
+#title {
+  font-size: 60px;
+}
+
+#subtitle {
+  font-size: 40px;
+}
+
+#section1 {
+  background: url("header.png") fixed ;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  text-align: center;
+  }
+
+#section2 {
+    background: url("section22.png") fixed;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
+    }
+
+#section3 {
+  background: url("grey.png") fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+}
+
+/*Header*/
+.page-header {
+  padding-top: 200px;
+  color: white;
+  text-shadow: 2px 2px DimGray;
+  box-shadow: 0px 2px DimGray;
+}
+
+
+
+/*Buttons*/
+.btn-main {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+  color: white;
+  background: DimGray;
+ }
+
+
+ @media only screen and (max-width: 1320px) {
+
+    body { color: blue; }
+
+ }
