@@ -1,3 +1,9 @@
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 /*Navigation bar*/
 .navbar {
   margin-bottom: -40px;
@@ -41,11 +47,15 @@ ul.nav a:hover {
 
 
 #title {
-  font-size: 60px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 46px;
 }
 
+
+
 #subtitle {
-  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 35px;
 }
 
 #section1 {
@@ -54,13 +64,21 @@ ul.nav a:hover {
   height: 1000px;
   background-size: cover;
   text-align: center;
+  text-shadow: 2px 2px DimGray;
+  box-shadow: 0px 2px DimGray;
   }
 
 #section2 {
+  margin-top: 100px;
+  padding-top: 20px;
     background: url("section22.png") fixed;
     background-repeat: no-repeat;
     height: 1000px;
     background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px DimGray;
+    box-shadow: 0px 2px DimGray;
     }
 
 #section3 {
@@ -74,17 +92,16 @@ ul.nav a:hover {
 .page-header {
   padding-top: 200px;
   color: white;
-  text-shadow: 2px 2px DimGray;
-  box-shadow: 0px 2px DimGray;
+
 }
-
-
 
 /*Buttons*/
+
 .btn-main {
+  font-family: 'Roboto Slab', serif;
   margin-top: 20px;
-  font-size: 20px;
 }
+
 .grow {
   transition: all .2s ease-in-out;
 }
@@ -96,8 +113,8 @@ ul.nav a:hover {
  }
 
 
- @media only screen and (max-width: 1320px) {
+ @media only screen and (max-width: 1000px) {
 
-    body { color: blue; }
+    #title { font-size: 30px}
 
  }
