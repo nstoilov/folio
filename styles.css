@@ -1,46 +1,32 @@
-
+/**/
+/*have container cover whole width*/
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
 }
 
 /*Navigation bar*/
-.navbar {
-  margin-bottom: -40px;
-  text-st
-}
-
 
 .navbar-nav {
   float:right;
 }
 
-
-ul.nav a {
-   background: #E8E8E8  ;
+.nav a {
+   background: #E8E8E8;
 }
 
-ul.nav a:hover {
+.nav a:hover {
    background: white;
 }
 
-.navbar-brand:hover{
-     background: white;
-}
-
 .navbar-brand{
-     background: #F0F0F0;
-     margin-left: 0px;
+   background: #F0F0F0;
+   margin-left: 0px;
 }
 
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -0px;
+.navbar-brand:hover{
+   background: white;
 }
-
- {
-  margin-top: 0px;
-}
-
 
 
 /*Sections*/
@@ -50,8 +36,6 @@ ul.nav a:hover {
   font-family: 'Roboto Slab', serif;
   font-size: 46px;
 }
-
-
 
 #subtitle {
   font-family: 'Roboto Slab', serif;
@@ -66,7 +50,7 @@ ul.nav a:hover {
   text-align: center;
   text-shadow: 2px 2px DimGray;
   box-shadow: 0px 2px DimGray;
-  }
+}
 
 #section2 {
   margin-top: 100px;
@@ -114,7 +98,10 @@ ul.nav a:hover {
 
 
  @media only screen and (max-width: 1000px) {
-
-    #title { font-size: 30px}
-
+    #title {
+      font-size: 30px
+    }
+    #list li {
+      display: list-item;
+    }
  }
