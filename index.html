@@ -1,69 +1,90 @@
 <html>
   <head>
-   <title>Portfolio Mofos</title>
-   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-   <!-- Optional theme -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-   <!-- Latest compiled and minified JavaScript -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="animate.css">
-   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
-   <script src="javascript.js"></script>
-   <link rel="stylesheet" type="text/css" href="styles.css">
- </head>
- <body>
- <!-- Nav Bar begin-->
-   <nav class="navbar navbar-default navbar-fixed-top">
-     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#" right><b><i>~Folio</b></i></a>
-       </div>
-       <div class="collapse navbar-collapse" id="myNavbar">
-         <ul class="nav navbar-nav">
-           <li class="active"><a href="#"><b>Home</b></a></li>
-           <li><a href="#"><b>About</b></a></li>
-           <li><a href="#"><b>Portfolio</b></a></li>
-           <li><a href="#"><b>Contact</b></a></li>
-         </ul>
-       </div>
-     </div>
-   </nav>
+         <title>Portfolio Mofos</title>
+         <!-- jQuery -->
+         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+         <!-- Bootstrap -->
+          <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+         <!-- Optional theme -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+         <!-- Latest compiled and minified JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+         <link rel="stylesheet" type="text/css" href="animate.css">
+         <!-- Fonts -->
+         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+         <!-- Icons -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <!-- Nav Bar end-->
+         <!-- Local resourses -->
+         <script src="javascript.js"></script>
+         <link rel="stylesheet" type="text/css" href="styles.css">
+ </head>
+
+ <body>
+<!-- Nav Bar begin-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand" href="#">&lt;&lt; Brand &gt;&gt;</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" id="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- Nav Bar end-->
+
   <div class="container-fluid">
-      <!--Section 1-->
-      <!--Title and subtitle-->
+<!--Section 1-->
+<!--Title and subtitle-->
+
     <div id="section1">
       <div class="container">
        <div class="page-header">
         <p id="title">
-          <b>Buttons are fixed now, making hamburgers</b>
+          Buttons are fixed now, making hamburgers
         </p>
         <p id="subtitle">
           Subtitle this is
         </p>
       </div>
     </div>
-      <!-- 4 buttons-->
 
+
+<!-- 4 buttons-->
     <div class="row">
       <ul class="list-inline" id="list">
-        <li><a class="btn btn-default btn-main btn-lg grow">LinkedIn</a></li>
-        <li><a class="btn btn-default btn-main btn-lg grow">LinkedIn</a></li>
-        <li><a class="btn btn-default btn-main btn-lg grow">LinkedIn</a></li>
-        <li><a class="btn btn-default btn-main btn-lg grow">MotherfuckigLinkedIn</a></li>
+        <li><a class="btn btn-default btn-main btn-lg grow"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a class="btn btn-default btn-main btn-lg grow"><i class="fa fa-github"></i> GitHub</a></li>
+        <li><a class="btn btn-default btn-main btn-lg grow"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a class="btn btn-default btn-main btn-lg grow"><i class="fa fa-fire"></i> freeCodeCamp</a></li>
       </ul>
     </div>
   </div>
-    <!-- Section 2 and 3-->
+  <!-- Section 2 and 3-->
   <div id="section2">
+    <div class="container">
+      <div class-"row">
+        <div class="col-md-6" id="col1"><h3>hi</h3>
+        </div>
+        <div class="col-md-6" id="col2"><h3>hi</h3>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="section3">
   <div>fu</div>

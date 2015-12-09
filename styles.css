@@ -7,63 +7,98 @@
 
 /*Navigation bar*/
 
-.navbar-nav {
-  float:right;
+.navbar {
+  margin-bottom: 0px;
+  font-family: 'Roboto', serif;
 }
 
-.nav a {
-   background: #E8E8E8;
+/*Navigation links*/
+
+.navbar-default .navbar-nav>li>a {
+  letter-spacing: 1px;
+  color: white;
+  background: #00BCD4;
+  border-width: 0 1 0 1;
+  border-style: solid;
+  border-color: #BBDEFB;
+
 }
 
-.nav a:hover {
-   background: white;
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: #0097A7;
+}
+/*Navigation brand*/
+.navbar-default .navbar-brand {
+  font-size: 24px;
+  font-family: 'VT323',serif ;
+  letter-spacing: 2px;
+  color: white;
+  background: #FF4081;
+  border-bottom-style: solid;
+  border-bottom-color: #0097A7;
+  border-bottom-width: medium;
 }
 
-.navbar-brand{
-   background: #F0F0F0;
-   margin-left: 0px;
+.navbar-default .navbar-brand:hover {
+  color: #B2EBF2;
+  background: #FF4081;
 }
 
-.navbar-brand:hover{
-   background: white;
-}
 
+/*Navigation hamburger*/
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover {
+  border: none;
+  background-color: transparent;
+}
 
 /*Sections*/
 
 
 #title {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif;
   font-size: 46px;
 }
 
 #subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif;
   font-size: 35px;
 }
 
 #section1 {
-  background: url("header.png") fixed ;
+  padding-top: 200px;
+  color: #212121;
+  background-color: rgba(0,0,0,0.10);
+  background: url("pika.png") fixed;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 1000px;
   background-size: cover;
   text-align: center;
-  text-shadow: 2px 2px DimGray;
-  box-shadow: 0px 2px DimGray;
+  text-shadow: 1px 1px #727272;
+  box-shadow: 0px 2px #727272;
+
 }
 
 #section2 {
-  margin-top: 100px;
-  padding-top: 20px;
     background: url("section22.png") fixed;
     background-repeat: no-repeat;
     height: 1000px;
     background-size: cover;
-    text-align: center;
     color: white;
-    text-shadow: 2px 2px DimGray;
-    box-shadow: 0px 2px DimGray;
-    }
+    text-shadow: 2px 2px black;
+    box-shadow: 0px 2px #BBDEFB;
+}
+
+#col-1 {
+  text-align: left;
+}
+
+#col-2 {
+  text-align: right;
+  color: black;
+}
 
 #section3 {
   background: url("grey.png") fixed;
@@ -72,17 +107,12 @@
   background-size: cover;
 }
 
-/*Header*/
-.page-header {
-  padding-top: 200px;
-  color: white;
-
-}
 
 /*Buttons*/
 
 .btn-main {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif ;
+  letter-spacing: 1px;
   margin-top: 20px;
 }
 
@@ -93,7 +123,7 @@
 .grow:hover {
   transform: scale(1.1);
   color: white;
-  background: DimGray;
+  background: #00BCD4;
  }
 
 
