@@ -114,11 +114,16 @@ p {
 #section3 {
   background: url("grey.png") fixed;
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 500px;
   background-size: cover;
 }
 
-
+#section4 {
+  background: url("green.png") fixed;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+}
 /*Buttons*/
 
 .btn-main {
@@ -137,7 +142,9 @@ p {
   background: #00BCD4;
  }
 
-
+#list2 {
+  list-style: none;
+}
 
  @media only screen and (max-width: 1000px) {
     #title {
@@ -155,7 +162,7 @@ p {
 /*Testing image overlay*/
 
 .hovereffect {
-    margin-top:25px;
+margin-top:25px;
 width:238px;
 height:238px;
 float:left;
@@ -241,4 +248,18 @@ transform:translatey(0);
 .hovereffect:hover a.info {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+
+
+.footer {
+  padding: 15px;
+  color: white;
+  background: grey;
+}
+.footer a {
+  color: white;
+}
+
+.footer .list-inline {
+  list-style: circle;
 }
