@@ -1,5 +1,4 @@
 /**/
-/*have container cover whole width*/
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
@@ -9,32 +8,15 @@
 
 .navbar {
   margin-bottom: 0px;
-  font-family: 'Roboto', serif;
 }
 
-/*Navigation links*/
-
-.navbar-default .navbar-nav>li>a {
-  letter-spacing: 1px;
-  color: white;
-  background: #00BCD4;
-  border-width: 0 1 0 1;
-  border-style: solid;
-  border-color: #BBDEFB;
-
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    color: white;
-    background: #0097A7;
-}
 /*Navigation brand*/
 .navbar-default .navbar-brand {
   font-size: 24px;
   font-family: 'VT323',serif ;
   letter-spacing: 2px;
   color: white;
-  background: green; /* #FF4081; */
+  background: #00BCD4; /* #FF4081; */
   border-bottom-style: solid;
   border-bottom-color: #0097A7;
   border-bottom-width: medium;
@@ -42,7 +24,23 @@
 
 .navbar-default .navbar-brand:hover {
   color: #B2EBF2;
-  background: #FF4081;
+  background: #0097A7;
+}
+/*Navigation links*/
+
+.navbar-default .navbar-nav>li>a {
+  font-family: 'Roboto', serif;
+  letter-spacing: 1px;
+  color: white;
+  background: #00BCD4;
+  border-width: 0 1 0 1;
+  border-style: solid;
+  border-color: #BBDEFB;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: #0097A7;
 }
 
 
@@ -58,21 +56,11 @@ p {
   font-size: 18px;
 }
 
-#title {
-  font-family: 'Roboto', serif;
-  font-size: 46px;
-}
-
-#subtitle {
-  font-family: 'Roboto', serif;
-  font-size: 35px;
-}
-
 #section1 {
   padding-top: 200px;
   color: #212121;
   background-color: rgba(0,0,0,0.10);
-  background: url("pika.png") fixed;
+  background: url("grey.png") fixed;
   background-size: contain;
   background-repeat: no-repeat;
   height: 1000px;
@@ -83,6 +71,9 @@ p {
 
 }
 
+
+
+
 #section2 {
     background: url("charmander.png") fixed;
     background-repeat: no-repeat;
@@ -91,7 +82,6 @@ p {
     color: white;
     box-shadow: 0px 2px #BBDEFB;
 }
-
 
 
 #col1 {
@@ -114,14 +104,21 @@ p {
 #section3 {
   background: url("grey.png") fixed;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 1000px;
   background-size: cover;
 }
 
 #section4 {
   background: url("green.png") fixed;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 1000px;
+  background-size: cover;
+}
+
+#section5 {
+  background: url("grey.png") fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
   background-size: cover;
 }
 /*Buttons*/
@@ -130,6 +127,8 @@ p {
   font-family: 'Roboto', serif ;
   letter-spacing: 1px;
   margin-top: 20px;
+  background: #9E9E9E;
+  color: #212121;
 }
 
 .grow {
@@ -141,6 +140,7 @@ p {
   color: white;
   background: #00BCD4;
  }
+
 
 #list2 {
   list-style: none;
@@ -262,4 +262,17 @@ transition-delay:.2s;
 
 .footer .list-inline {
   list-style: circle;
+}
+
+.jumbotron {
+  background: transparent;
+    box-shadow: 0px 1px #727272;
+}
+
+.jumbotron p {
+  font-size: 24px;
+}
+
+.btn-primary {
+  border: none;
 }
