@@ -54,6 +54,7 @@
     background: #0097A7;
 }
 
+
 .navbar-fixed-top {
   border-bottom: 0px;
 }
@@ -69,44 +70,61 @@
 p {
   font-size: 18px;
 }
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  box-shadow: 0px 2px #BBDEFB;
+}
 
-#section1 {
+.section1 {
   padding-top: 200px;
   color: #212121;
   background-color: rgba(0,0,0,0.10);
-  background: url("grey.png") fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("Resources/Images/grey.png") fixed;
   height: 1000px;
-  background-size: cover;
   text-align: center;
   text-shadow: 1px 1px #727272;
-  box-shadow: 0px 2px #727272;
-
 }
 
+.jumbotron {
+  background: transparent;
+    box-shadow: 0px 1px #727272;
+}
 
+.jumbotron p {
+  font-size: 24px;
+}
 
-
-#section2 {
-    background: url("charmander.png") fixed;
-    background-repeat: no-repeat;
+.section2 {
+    background: url("Resources/Images/charmander.png") fixed;
     height: 750px;
-    background-size: cover;
     color: white;
-    box-shadow: 0px 2px #BBDEFB;
+}
+
+.section3 {
+  background: url("Resources/Images/grey.png") fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+}
+
+.list2 {
+  list-style: none;
+}
+
+.section4 {
+  background: whitesmoke fixed;
+  height: 350px;
 }
 
 
-#col1 {
+.col1 {
   margin-top: 30px;
 }
 
-#col1 a {
-  color: #00BCD4;
-}
 
-#image-round {
+.image-round {
   margin-top: 50px;
   margin-left:70px;
   width: 200px;
@@ -115,27 +133,27 @@ p {
   border-color: #00BCD4;
 }
 
-#section3 {
-  background: url("grey.png") fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-#section4 {
-  background: url("green.png") fixed;
-  background-repeat: no-repeat;
-  height: 350px;
-  background-size: cover;
-}
-
-
-
 /*Footer*/
 
 
+.footer {
+  padding: 15px;
+  color: white;
+  background: grey;
+}
+.footer a {
+  color: white;
+}
+
+.footer .list-inline {
+  list-style: circle;
+}
+
 /*Buttons*/
 
+.btn-primary {
+  border: none;
+}
 .btn-main {
   font-family: 'Roboto', serif ;
   letter-spacing: 1px;
@@ -155,22 +173,6 @@ p {
  }
 
 
-#list2 {
-  list-style: none;
-}
-
- @media only screen and (max-width: 1000px) {
-    #title {
-      font-size: 30px
-    }
-    #list li {
-      display: list-item;
-    }
-
-    #image-round {
-      display: none;
-    }
- }
 
 /*Testing image overlay*/
 
@@ -265,28 +267,15 @@ transition-delay:.2s;
 }
 
 
-.footer {
-  padding: 15px;
-  color: white;
-  background: grey;
-}
-.footer a {
-  color: white;
-}
 
-.footer .list-inline {
-  list-style: circle;
-}
 
-.jumbotron {
-  background: transparent;
-    box-shadow: 0px 1px #727272;
-}
 
-.jumbotron p {
-  font-size: 24px;
-}
+ @media only screen and (max-width: 1000px) {
+      .list1 li {
+      display: list-item;
+    }
 
-.btn-primary {
-  border: none;
-}
+    .image-round {
+      display: none;
+    }
+ }
