@@ -1,0 +1,8 @@
+.btn, .well, .h1 {
+    margin-top: 50px;
+}
+
+.well {
+  width: 450px;
+  min-height: 100px;
+}
