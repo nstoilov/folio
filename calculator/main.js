@@ -1,106 +1,134 @@
 var operation = "";
-var firstValue = "";
+var firstValue = "0";
 var secondValue = "";
 var screenValue = "";
+var statement = "";
 
-function assignButtons() {
+function press(x){	
+	if ((firstValue.charAt(0)) === "0" && (firstValue.charAt(1) !== ".") && (x !== ".")) {
+		firstValue = firstValue.slice(0,-1);
+	};
+	firstValue += x;
+	$("#screen").text(firstValue);	
+}
+
+function operator(x){
+	secondValue = firstValue;
+	firstValue = "";
+	$("#screen").text(firstValue);
+	operation = x;
+}
+
+function equals () {
+	if (!statement) {
+		statement = secondValue + operation + firstValue;
+		$("#screen").text(eval(statement));	
+	} else {
+		$("#screen").text(eval(statement));	
+	}
+	firstValue = "0";
+	statement = "0";
+}
+
+function percent () {
+	statement = secondValue + operation + "((" + firstValue + "*" + secondValue + ") / 100" + ")";
+	$("#screen").text(eval(statement));	
+	firstValue = "0";
+}
+
+function calculate() {
 	
 	$("#one").click(function(){
-		console.log("1 was clicked");
-		firstValue += "1";
+		press(1);	
 	});
 
 	$("#two").click(function(){
-		console.log("2 was clicked");
-		firstValue += "2";
-		console.log(firstValue);
+		press(2);
 	});
 
 	$("#three").click(function(){
-		console.log("3 was clicked");
-		firstValue += "3";
+		press(3);
 	});
 
 	$("#four").click(function(){
-		console.log("4 was clicked");
-		firstValue += "4";
+		press(4);
 	});
 
 	$("#five").click(function(){
-		console.log("5 was clicked");
-		firstValue += "5";
+		press(5);
 	});
 
 	$("#six").click(function(){
-		console.log("6 was clicked");
-		firstValue += "6";
+		press(6);
 	});
 
 	$("#seven").click(function(){
-		console.log("7 was clicked");
-		firstValue += "7";
+		press(7);
 	});
 
 	$("#eight").click(function(){
-		console.log("8 was clicked");
-		firstValue += "8";
+		press(8);
 	});
 
-	$("#nine").click( function(){
-		console.log("9 was clicked");
-		firstValue += "9";
+	$("#nine").click(function(){
+		press(9);
 	});
 
 	$("#zero").click(function(){
-		console.log("0 was clicked");
-		firstValue += "0";
+		if ((firstValue.charAt(0) !== "0") || (firstValue.charAt(1) === ".")){
+			press(0);
+		};		
 	});
 
-	$("#ac").click(function(){
-		console.log("AC was clicked");
-		firstValue = "";
+	$("#point").click(function(){
+		if (firstValue.indexOf(".") == -1){
+			press(".");
+		};
+		
 	});
 
-	$("#ce").click(function(){
-		console.log("CE was clicked");
-		firstValue = "";
+
+	$("#ac").click(function(){		
+		firstValue = "0";
+		$("#screen").text(firstValue);	
+	});
+
+	$("#ce").click(function(){		
+		firstValue = firstValue.slice(0,-1);
+		if (!firstValue) {
+			firstValue = "0";
+		}
+		$("#screen").text(firstValue);	
 	});
 
 	$("#percent").click(function(){
-		console.log("% was clicked");
+		percent();
 	});
 
-	$("#divide").click(function(){
-		console.log("/ was clicked");
+	$("#divide").click(function(){	
+		operator("/");	
 	});
 
 	$("#x").click(function(){
-		console.log("x was clicked");
+		operator("*");	
 	});
 
-	$("#minus").click(function(){
-		console.log("- was clicked");
+	$("#minus").click(function(){	
+		operator("-");	
 	});
 
-	$("#plus").click(function(){
-		console.log("+ was clicked");
+	$("#plus").click(function(){	
+		operator("+");	
 	});
 
-	$("#equals").click(function(){
-		console.log("= was clicked");
+	$("#equals").click(function(){	
+		equals();
 	});
 
-
-	$("#point").click(function(){
-		console.log(". was clicked");
-	});
+	
 }
 
-
-
 $(document).ready(function(){
-	assignButtons();
-
+	calculate();
 })
-
 

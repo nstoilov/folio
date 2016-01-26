@@ -28,6 +28,7 @@
   border-width: 10px 10px 10px 10px;
   color: white;
   box-shadow: 2px 2px 2px #707070 ;
+  height: 70px;
 }
 
 .row1 {
@@ -58,7 +59,3 @@
   background-color: #707070;
   }
 
-
-  .closex {
-    float: right;
-  }
