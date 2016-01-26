@@ -14,26 +14,29 @@ function press(x){
 
 function operator(x){
 	secondValue = firstValue;
-	firstValue = "";
 	$("#screen").text(firstValue);
-	operation = x;
+	operation = x;	
+	statement += secondValue + operation;
+	
+	console.log(statement);
+	firstValue = "";
+
 }
 
 function equals () {
-	if (!statement) {
-		statement = secondValue + operation + firstValue;
+	
+		statement = statement + firstValue;
 		$("#screen").text(eval(statement));	
-	} else {
-		$("#screen").text(eval(statement));	
-	}
+	console.log(statement);
 	firstValue = "0";
-	statement = "0";
+	statement = "";
 }
 
 function percent () {
 	statement = secondValue + operation + "((" + firstValue + "*" + secondValue + ") / 100" + ")";
 	$("#screen").text(eval(statement));	
 	firstValue = "0";
+	statement = "";
 }
 
 function calculate() {
@@ -90,6 +93,7 @@ function calculate() {
 
 	$("#ac").click(function(){		
 		firstValue = "0";
+		statement = "";
 		$("#screen").text(firstValue);	
 	});
 
