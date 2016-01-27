@@ -6,13 +6,13 @@ h1 {
   }
 
  #circle {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-style: solid;
   border-radius: 50%;
   border-color: green;
   border-width: 2px;
-  padding-top: 55px;
-  font-size: 25px;
+  padding-top: 69px;
+  font-size: 37px;
   color: green;
 }
