@@ -10,5 +10,5 @@ function timer() {
 		console.log("over");
 		return;
 	}
-	document.getElementById("timer").innerHTML = count;
+	//document.getElementById("timer").innerHTML = count;
 }
