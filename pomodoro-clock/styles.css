@@ -38,6 +38,6 @@ h1 {
   padding-top: 58px;
 }
 
-i {
-  font-style: inherit;
+.status {
+  font-size: 20px;
 }

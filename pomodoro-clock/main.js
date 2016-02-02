@@ -16,11 +16,13 @@ function resetCounter(){
 		if (!breakSession) {
 			time = inputSessionMinutes * 60;		
 			minutes = inputSessionMinutes - 1;		
-			breakSession = 1;		
+			breakSession = 1;	
+			document.getElementById("status").innerHTML = "<br>Session";
 		} else {
 			time = inputBreakMinutes * 60;
 			minutes = inputBreakMinutes - 1;
 			breakSession = 0;
+			document.getElementById("status").innerHTML = "<br>Break";
 			}
 		counter = setInterval(timer, 1000);
 }
