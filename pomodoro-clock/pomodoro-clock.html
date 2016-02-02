@@ -15,24 +15,28 @@
         <h1 class="text-center">Pomodoro Clock</h1>
 
         <div class="row legend">
-          <div class="col-md-2 col-md-offset-4 text-center">
+          <div class="col-sm-2 col-sm-offset-4 text-center">
             <p>BREAK LENGTH</p>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-sm-2 text-center">
             <p>SESSION LENGTH</p>
           </div>
         </div>
         <div class="row setting">
-          <div class="col-md-2 col-md-offset-4 text-center">
-            <p class> <a> - </a> 5 <a> + </a> </p>
+          <div class="col-sm-2 col-sm-offset-4 text-center">
+             <a onclick="breakMinus()"> - </a>
+             <span id="break"> 5 </span>
+             <a onclick="breakPlus()"> + </a>
           </div>
-          <div class="col-md-2 text-center">
-            <p class> <a> - </a> 25 <a> + </a> </p>
+          <div class="col-sm-2 text-center">
+            <a onclick="sessionMinus()"> - </a> 
+            <span id="session"> 25 </span>
+            <a onclick="sessionPlus()"> + </a> 
           </div>
         </div>
-        <div class="center-block text-center" id="circle">
-        <p id="timer">Session<br>24:15
-        </p>
+        <div class="center-block text-center time" id="circle">
+          <a class="start" onclick="start()" >Start/Reset<br></a>
+          <span class id="minutes">00</span>:<span id="seconds">00</span>
         </div>
       </div>
 

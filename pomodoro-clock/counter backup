@@ -1,0 +1,28 @@
+
+var countSec = 60;
+var minFlag = 0;
+var countMin = 10;
+var timer;
+
+timer = setInterval(timerSec, 1000);
+
+
+function timerSec() {
+	
+	//update seconds
+	if (countSec <= 0) {
+		document.getElementById("secs").innerHTML = "00";
+		clearInterval(timer);
+
+	} else if (countSec <= 10) {
+		countSec = countSec - 1;
+		document.getElementById("secs").innerHTML = "0" + countSec;
+	} else {
+		countSec = countSec - 1;
+		document.getElementById("secs").innerHTML = countSec;
+	}
+	minFlag += 1;
+	console.log(minFlag);
+
+
+}

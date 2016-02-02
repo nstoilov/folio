@@ -20,6 +20,13 @@ h1 {
   font-size: 25px;
 }
 
+.start {
+  font-size: 28px;
+}
+
+.time {
+  font-size: 43px;
+}
  #circle {
   margin-top: 25px;
   width: 250px;
@@ -28,6 +35,9 @@ h1 {
   border-radius: 50%;
   border-color: grey;
   border-width: 2px;
-  padding-top: 69px;
-  font-size: 37px; 
+  padding-top: 58px;
+}
+
+i {
+  font-style: inherit;
 }
