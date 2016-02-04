@@ -5,9 +5,15 @@ var seconds = 60;
 var minutes;
 var counter;
 var breakSession;
+var msgSession = new SpeechSynthesisUtterance('Session start.');
+var msgBreak = new SpeechSynthesisUtterance('End of session. Take a break.');
+var msgGreeting = new SpeechSynthesisUtterance('Hello tester. Adjust the break and session lengths if necessary, then press start to begin.');
+
 
 var inputSessionMinutes = 25;
 var inputBreakMinutes = 5;
+
+window.speechSynthesis.speak(msgGreeting);
 
 function resetCounter(){	
 	clearInterval(counter);
@@ -18,11 +24,13 @@ function resetCounter(){
 			minutes = inputSessionMinutes - 1;		
 			breakSession = 1;	
 			document.getElementById("status").innerHTML = "<br>Session";
+			window.speechSynthesis.speak(msgSession);
 		} else {
 			time = inputBreakMinutes * 60;
 			minutes = inputBreakMinutes - 1;
 			breakSession = 0;
 			document.getElementById("status").innerHTML = "<br>Break";
+			window.speechSynthesis.speak(msgBreak);
 			}
 		counter = setInterval(timer, 1000);
 }
@@ -103,3 +111,5 @@ function sessionPlus(){
 	document.getElementById("session").innerHTML =  inputSessionMinutes;
 	}
 }
+
+v
