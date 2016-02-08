@@ -1,4 +1,18 @@
 #button1 {
 	display: block;
-	margin: 100 auto;
+	margin: 100 auto 0 auto;
+	background-color: lightgrey;
+	border-radius: 5px;
+	border-color: grey;
+	border-width:2px;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100px;
+}	
+
+.svg1 {
+	display: block;
+	margin: 0 auto;
+	
 }
