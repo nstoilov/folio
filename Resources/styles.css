@@ -86,7 +86,7 @@ p {
   padding-top: 200px;
   color: whitesmoke;
   background-color: rgba(0,0,0,0.10);
-  background: url("images/keyboard.jpg") fixed;
+  background: url("Images/keyboard.jpg") fixed;
   height: 1000px;
   text-align: center;
   text-shadow: 1px 1px #727272;
@@ -102,13 +102,13 @@ p {
 }
 
 .section2 {
-    background: url("images/dark-pattern.png") fixed;
+    background: url("Images/dark-pattern.png") fixed;
     height: 750px;
     color: white;
 }
 
 .section3 {
-  background: url("images/grey.png") fixed;
+  background: url("Images/grey.png") fixed;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 550px;
