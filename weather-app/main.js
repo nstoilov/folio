@@ -17,6 +17,10 @@ $(document).ready(function() {
 				if (weather.weather[0].description == "broken clouds" || weather.weather[0].description == "scattered clouds" || weather.weather[0].description == "few clouds") {
 					$("#icon").html('<img src="images/sunandcloud.jpg" alt="sunandcloud">');
 				}
+
+				if (weather.weather[0].description == "light rain" || weather.weather[0].description == "scattered clouds" || weather.weather[0].description == "few clouds") {
+					$("#icon").html('<img src="images/lightrain.jpg" alt="lightrain">');
+				}
 	}
 
 	function getWeather() {
