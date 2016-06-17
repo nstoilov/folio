@@ -1,0 +1,186 @@
+<html>
+  <head>
+         <title>Nikolai Stoilov's Portfolio Page</title>
+         <!-- jQuery -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+         <!-- Bootstrap -->
+          <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+         <!-- Optional theme -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+         <!-- Latest compiled and minified JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+         <link rel="stylesheet" type="text/css" href="Resources/animate.css">
+         <!-- Fonts -->
+         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+         <!-- Icons -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+         <!-- Local resourses -->
+         <link rel="stylesheet" type="text/css" href="Resources/styles.css">
+ </head>
+
+ <body>
+<!-- Nav Bar begin-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">&lt;&lt; Nikolai &gt;&gt;</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Nav Bar end-->
+
+  <div class="container-fluid">
+<!--Section 1-->
+<!--Title and Subtitle-->
+    <div class="section section1">
+      <div class="container">
+        <div class="jumbotron text-center">
+          <div class="container">
+            <h1>Hello there! I'm Nikolai Stoilov.</h1>
+            <p>Welcome to my personal portfolio page.</p>
+          </div>
+        </div>
+    </div>
+<!-- 4 buttons-->
+    <div class="row">
+      <ul class="list-inline list1">
+        <li><a class="btn btn-primary btn-main btn-lg grow" href="https://twitter.com/NikolaiStoilov"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a class="btn btn-primary btn-main btn-lg grow" href="https://github.com/nstoilov"><i class="fa fa-github"></i> GitHub</a></li>
+        <li><a class="btn btn-primary btn-main btn-lg grow" href="https://bg.linkedin.com/in/nikolaistoilov"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a class="btn btn-primary btn-main btn-lg grow" href="http://www.freecodecamp.com/nstoilov"><i class="fa fa-fire"></i> freeCodeCamp</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Section 2 and 3-->
+  <div class="section section2">
+    <a name="about"></a>
+    <div class="container anchor">
+      <div class-"row">
+          <!-- text left -->
+        <div class="col-md-6 col1">
+          <h2>Nikolai Stoilov</h2>
+          <p>I've been teaching myself JavaScript for the last year. I use this website to track my progress and publish the apps I make.</p>
+        </div>
+          <!-- picture right -->
+        <div class="col-md-6">
+          <img class="img-circle img-responsive image-round" src="Resources/Images/me.png" alt="me" id="image-round">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section3">
+    <a name="portfolio"></a>
+    <div class="container anchor">
+
+      <h1 class="text-center">Some apps I made.</h1>
+      <div class-"row" id="third">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="Resources/Images/calculator.png" alt="calculator">
+            <div class="overlay">
+              <h2>Calculator</h2>
+              <a class="info" href="calculator/calculator.html">Visit App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="Resources/Images/pomodoro-clock.png" alt="pomodoro-clock">
+            <div class="overlay">
+              <h2>Pomodoro Clock</h2>
+              <a class="info" href="pomodoro-clock/pomodoro-clock.html">Visit App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="Resources/Images/quotes-generator.png" alt="quotes-generator">
+            <div class="overlay">
+              <h2>Quotes Generator</h2>
+              <a class="info" href="quotes-generator/quotes-generator.html">Visit App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="Resources/Images/weather-app.png" alt="weather-app">
+            <div class="overlay">
+              <h2>Weather App</h2>
+              <a class="info" href="weather-app/weather-app.html">Visit App</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="section section4">
+    <a name="contact"></a>
+    <div class="container anchor">
+      <div class-"row">
+        <div class="col-md-9">
+          <h2>Nikolai Stoilov</h2>
+          <p>Contact info is always good to have, especially on a portfolio page.</p>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="list list2">
+            <li><a class="btn btn-primary btn-main btn-lg grow" href="https://twitter.com/NikolaiStoilov"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a class="btn btn-primary btn-main btn-lg grow" href="https://github.com/nstoilov"><i class="fa fa-github"></i> GitHub</a></li>
+            <li><a class="btn btn-primary btn-main btn-lg grow" href="https://bg.linkedin.com/in/nikolaistoilov"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <li><a class="btn btn-primary btn-main btn-lg grow" href="http://www.freecodecamp.com/nstoilov"><i class="fa fa-fire"></i> freeCodeCamp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer-->
+    <footer class="footer">
+           <div class="container">
+             <ul class="list-inline">
+               <li><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+             </ul>
+           </div>
+         </footer>
+
+  </div>
+  </div>
+</div>
+</div>
+<script>
+  window.intercomSettings = {
+    app_id: "q00vhoa1",
+    name: "Jane Doe", // Full name
+    email: "customer@example.com", // Email address
+    created_at: 1312182000 // Signup date as a Unix timestamp
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q00vhoa1';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body>
+</html>
