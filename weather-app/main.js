@@ -41,8 +41,8 @@ $(document).ready(function() {
 		location = "Sofia";
 		getWeather();
 	})
-		$("#london").click(function(){
-		location = "London";
+		$("#Chepintsi").click(function(){
+		location = "Chepintsi";
 		getWeather();
 
 	})
